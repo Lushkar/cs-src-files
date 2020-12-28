@@ -1,0 +1,11 @@
+fm = 10;
+fc1 = 50; fc2 = 20;
+Fs = 500;
+T = 0.5;
+
+t = linspace(0, T, Fs*T);
+
+m = (square(2*pi*fm*t) + 1) / 2;
+
+figure(1)
+plot(t,m);
